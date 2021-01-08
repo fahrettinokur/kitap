@@ -1,2 +1,2 @@
-"https://github.com/fahrettinokur/kitap/raw/main/VHDL.pdf"
-"guncelleme/vhdl.pdf"
+https://github.com/fahrettinokur/kitap/raw/main/VHDL.pdf
+guncelleme/vhdl.pdf
