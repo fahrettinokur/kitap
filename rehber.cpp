@@ -44,7 +44,7 @@ tanim x;
 int x_durum = 1;
 while (x_durum){
 
-cout << ".....xxxEkleme islemlerixxx.... " << endl;
+cout << ".....xxxEkleme islemlerixxx....fahrettin okur " << endl;
 cout << "Dizi icin : d \n Film icin : f"<<endl;
 cout << "Gecmis durumu incelmek icin... g " << endl;
 cout << "seciminizi :" ;
