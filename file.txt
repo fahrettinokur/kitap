@@ -1,2 +1,2 @@
-https://github.com/fahrettinokur/kitap/raw/main/rehber.exe
-rehber.exe
+https://raw.githubusercontent.com/fahrettinokur/kitap/main/rehber.cpp
+rehber.cpp
