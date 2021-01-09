@@ -3,7 +3,7 @@
 #include<string>
 #include <Windows.h>
 #include <cstdlib>
-#include "guncelleme1.cpp"
+
 
 
 using namespace std;
@@ -29,13 +29,12 @@ string bant_sikistirma(string name)
 
 
 
-int main(){
+void kitap(){
 	
 	
 	
 	
-guncelleme_start();
-	
+
 
 	
 	
@@ -65,19 +64,19 @@ bool durum=dosyaOku.is_open();
 	
 	}
 
-// bu bölüm veri girişi
+// bu bÃ¶lÃ¼m veri giriÅŸi
 cout << "Dizinin ismini giriniz :";
 getline(cin >> ws,x.name);
 
 
-//bu bölüm tür girişi
+//bu bÃ¶lÃ¼m tÃ¼r giriÅŸi
 cout <<"Dizinin turunu giriniz  :";
 getline(cin >> ws , x.tur);
 
 
 
-//bu bölümde açıklama girilir
-cout <<"Dizi hakkinda açiklamayi giriniz :";
+//bu bÃ¶lÃ¼mde aÃ§Ä±klama girilir
+cout <<"Dizi hakkinda aÃ§iklamayi giriniz :";
 getline(cin >> ws,x.aciklama);
 
 
@@ -88,25 +87,25 @@ while(getline(dosyaOku,satir_oku)){
 		n++;
 }
 
-//x.name in ekrana yazarken kullanılan sıralama işlemleri...
-//ayrıca diziye atanıldı
+//x.name in ekrana yazarken kullanÄ±lan sÄ±ralama iÅŸlemleri...
+//ayrÄ±ca diziye atanÄ±ldÄ±
 string n_s=to_string(n);	
 string gecis = n_s+"-";
 x.name = gecis + x.name;
 
-//isimleri belli dizi içinde sıkıştırıp almamız kolay olsun istiyoruz
+//isimleri belli dizi iÃ§inde sÄ±kÄ±ÅŸtÄ±rÄ±p almamÄ±z kolay olsun istiyoruz
 x.name=bant_sikistirma(x.name);
 x.tur=bant_sikistirma(x.tur);
 
-// dosyaya ekleme yapamız için kullanılan bir sistem
+// dosyaya ekleme yapamÄ±z iÃ§in kullanÄ±lan bir sistem
 fstream dosyaGul("C:/Users/fahrettin/Desktop/dizivefilim/dizi.txt",ios::app);
 
-//yazama işlemi yapıldı
+//yazama iÅŸlemi yapÄ±ldÄ±
 string yazmac = x.name + " " + x.tur +  x.aciklama + "\n";
 dosyaGul << yazmac;
 
 
-//açılan dosya kapatıldı
+//aÃ§Ä±lan dosya kapatÄ±ldÄ±
 dosyaGul.close();
 dosyaOku.close();
 
@@ -122,7 +121,7 @@ dosyaOku.close();
 
 
 
-şimdi sıra filimlere geldi
+ÅŸimdi sÄ±ra filimlere geldi
 
 
 
@@ -142,18 +141,18 @@ bool durum=dosyaOku.is_open();
 	system("cls");
 	}
 
-// bu bölüm veri girişi
+// bu bÃ¶lÃ¼m veri giriÅŸi
 cout << "Film in ismini giriniz ismini giriniz :";
 getline(cin >> ws,x.name);
 
 
-//bu bölüm tür girişi
+//bu bÃ¶lÃ¼m tÃ¼r giriÅŸi
 cout <<"Filminizin turunu giriniz  :";
 getline(cin >> ws , x.tur);
 
 
-//bu bölümde açiklama verisi alınır
-cout <<"Filim hakkinda açiklamayı giriniz :";
+//bu bÃ¶lÃ¼mde aÃ§iklama verisi alÄ±nÄ±r
+cout <<"Filim hakkinda aÃ§iklamayÄ± giriniz :";
 getline(cin >> ws , x.aciklama);
 
 
@@ -164,25 +163,25 @@ while(getline(dosyaOku,satir_oku)){
 		n++;
 }
 
-//x.name in ekrana yazarken kullanılan sıralama işlemleri...
-//ayrıca diziye atanıldı
+//x.name in ekrana yazarken kullanÄ±lan sÄ±ralama iÅŸlemleri...
+//ayrÄ±ca diziye atanÄ±ldÄ±
 string n_s=to_string(n);	
 string gecis = n_s+"-";
 x.name = gecis + x.name;
 
-//isimleri belli dizi içinde sıkıştırıp almamız kolay olsun istiyoruz
+//isimleri belli dizi iÃ§inde sÄ±kÄ±ÅŸtÄ±rÄ±p almamÄ±z kolay olsun istiyoruz
 x.name=bant_sikistirma(x.name);
 x.tur=bant_sikistirma(x.tur);
 
-// dosyaya ekleme yapamız için kullanılan bir sistem
+// dosyaya ekleme yapamÄ±z iÃ§in kullanÄ±lan bir sistem
 fstream dosyaGul("C:/Users/fahrettin/Desktop/dizivefilim/film.txt",ios::app);
 
-//yazama işlemi yapıldı
+//yazama iÅŸlemi yapÄ±ldÄ±
 string yazmac = x.name + " " + x.tur + x.aciklama + "\n";
 dosyaGul << yazmac;
 
 
-//açılan dosya kapatıldı
+//aÃ§Ä±lan dosya kapatÄ±ldÄ±
 dosyaGul.close();
 dosyaOku.close();
 	
@@ -192,7 +191,7 @@ dosyaOku.close();
 else if(secim_df=='g'){
 	system("cls");
 	char oku_df;
-	cout << "Filim için f Dizi için d   :";
+	cout << "Filim iÃ§in f Dizi iÃ§in d   :";
 	cin >> oku_df;
 	
 	if (oku_df=='d'){
