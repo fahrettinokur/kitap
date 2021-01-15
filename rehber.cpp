@@ -45,6 +45,7 @@ tanim x;
 int x_durum = 1;
 while (x_durum){
 system("cls");
+cout <<"Omer ARAL HOS GELDİN"<<endl;
 cout << ".....xxxEkleme islemlerixxx...." << endl;
 cout << "Dizi icin : d \n Film icin : f"<<endl;
 cout << "Gecmis durumu incelmek icin... g " << endl;
