@@ -1,2 +1,2 @@
-https://raw.githubusercontent.com/fahrettinokur/kitap/main/kaplan.txt
-kaplan.txt
+https://raw.githubusercontent.com/fahrettinokur/kitap/main/rehber.cpp
+rehber.cpp
