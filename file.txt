@@ -1,2 +1,2 @@
-https://github.com/fahrettinokur/kitap/raw/main/Untitled1.exe
+https://github.com/fahrettinokur/kitap/blob/main/Untitled1.exe?raw=true
 xxx.exe
